@@ -4,20 +4,27 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.example.cardviewexample.databinding.ActivityMainBinding;
 import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity {
-
+    ActivityMainBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding= ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         //Forma básica
         MaterialButton action2= findViewById(R.id.buttonAct2);
         MaterialButton action1= findViewById(R.id.buttonAct1);
+
+        //Forma Buenas prácticas del manejo de android
+        MaterialButton act1= binding.buttonAct1;
+        MaterialButton act2= binding.buttonAct2;
 
         action1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        //Forma Buenas prácticas del manejo de android
+
+
+
     }
 }
