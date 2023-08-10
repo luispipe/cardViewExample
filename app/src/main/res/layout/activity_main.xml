@@ -52,7 +52,7 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/button2"
+                    android:id="@+id/buttonAct1"
                     style="?attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
                     android:text="Action 1" />
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/button"
+                    android:id="@+id/buttonAct2"
                     style="?attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
